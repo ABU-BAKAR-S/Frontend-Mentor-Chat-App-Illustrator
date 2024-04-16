@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Inter:wght@100..900&family=Outfit&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:wght@400;500;700&family=Young+Serif&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --paleVioletSubHeading: hsl(276, 100%, 81%);
+  /* sub-heading at the top of the app UI) */
+  --moderateViolet: hsl(276, 55%, 52%);
+  /* chat on the left */
+  --desaturatedDarkViolet: hsl(271, 15%, 43%);
+  /* chat on the right */
+  --grayishBlue: hsl(206, 6%, 79%);
+  /* placeholder text */
+  --veryDarkDesaturatedViolet: hsl(271, 36%, 24%);
+  /* main heading */
+  --DarkGrayishViolet: hsl(270, 7%, 64%);
+  /* paragraph */
+  --lightMagenta: hsl(293, 100%, 63%);
+  --lightViolet: hsl(264, 100%, 61%);
+  /* gradient color */
+  --white: hsl(0, 0%, 100%);
+  --lightGrayishViolet: hsl(270, 20%, 96%);
+  /* app background */
+  --veryDarkDesaturatedViolet: hsl(271, 36%, 24%);
+  /*  submit button background*/
+  --veryLightMagenta: hsl(289, 100%, 72%);
+  /* radio button outlines */
+}
+body {
+  font-family: "Rubik", sans-serif;
+  background: var(--lightGrayishViolet);
+}
+.chat_background {
+  width: 180px;
+  height: 600px;
+  background-image: linear-gradient(hsl(283, 100%, 53%), hsl(264, 100%, 61%));
+  border-bottom-right-radius: 320px;
+  /* border-bottom-left-radius: 120px; */
+  position: relative;
+}
+.chat_container {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 280px;
+  height: 600px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 30px;
+  background: var(--lightGrayishViolet);
+  box-shadow: 0 0 20px hsl(270, 7%, 74%);
+}
+.chat_app_profile {
+  background: linear-gradient(
+    to right,
+    hsl(264, 100%, 61%),
+    hsl(283, 100%, 53%)
+  );
+  height: 80px;
+  padding: 30px 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0 0 10px var(--grayishBlue);
+  border-radius: 30px 30px 10px 10px;
+}
+.chat_app_background {
+  width: 150px;
+  height: 30px;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 26%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: var(--lightGrayishViolet);
+}
+.profile_container {
+  display: flex;
+  align-items: center;
+}
+.fa-chevron-left {
+  color: var(--white);
+  margin: 15px 10px 0 0;
+}
+.profile-img {
+  width: 30px;
+  margin: 15px 10px 0 0;
+  border-radius: 50%;
+  outline: 2px solid var(--grayishBlue);
+}
+.profile_info {
+  margin: 18px 50px 0 0;
+}
+.profile_info h4 {
+  font-weight: 700;
+  color: var(--paleVioletSubHeading);
+}
+.profile_info small {
+  font-size: 12px;
+  color: var(--DarkGrayishViolet);
+}
+.fa-ellipsis-v {
+  color: var(--paleVioletSubHeading);
+  margin: 15px 10px 0 0;
+}
+.chat_app_body {
+  padding: 5px 0 10px;
+}
+.msg_box {
+  width: 160px;
+  height: auto;
+  padding: 8px;
+  margin: 6px 0;
+  border-radius: 12px 12px 12px 5px;
+  color: var(--moderateViolet);
+  background: hsl(281, 22%, 90%);
+}
+.msg_box p {
+  font-size: 10px;
+  font-weight: 500;
+}
+.reply_msg_imgs {
+  text-align: right;
+  margin: 15px 0;
+}
+.reply_msg_imgs img {
+  width: 50px;
+  margin-right: 8px;
+  border-radius: 12px;
+}
+.reply_msg_box {
+  float: right;
+  width: auto;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 12px 12px 5px 12px;
+  box-shadow: 0 2px 8px var(--grayishBlue);
+  background: var(--lightGrayishViolet);
+}
+.reply_msg_box p {
+  font-size: 10px;
+  color: var(--desaturatedDarkViolet);
+  font-weight: 500;
+}
+.clear_float::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.time_select_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 200px;
+  height: 45px;
+  margin-top: 10px;
+  border-radius: 12px 12px 12px 5px;
+  background: linear-gradient(
+    to right,
+    hsl(283, 100%, 53%),
+    hsl(264, 100%, 61%)
+  );
+}
+.time_select {
+  display: flex;
+  align-items: center;
+}
+.radio_button {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--veryLightMagenta);
+  background: transparent;
+}
+.time_select_box p {
+  font-size: 10px;
+  font-weight: 500;
+  color: hsl(206, 6%, 85%);
+}
+.time_select_box span {
+  font-weight: 700;
+  padding-right: 10px;
+  color: var(--lightGrayishViolet);
+}
+.chat_app_footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.chat_app_footer small {
+  font-size: 10px;
+  padding-left: 20px;
+  color: var(--grayishBlue);
+}
+.chat_app_footer .fa {
+  font-size: 30px;
+  padding-right: 15px;
+  color: var(--veryDarkDesaturatedViolet);
+}
+.chat_desc {
+  margin: 20% auto;
+
+  text-align: center;
+}
+.chat_desc h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--veryDarkDesaturatedViolet);
+}
+.chat_desc p {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 25px;
+  color: var(--DarkGrayishViolet);
+}
+
+/* media query for mobile 375px */
+@media screen and (min-width: 375px) {
+  .chat_background {
+    width: 200px;
+  }
+  .chat_container {
+    top: 8%;
+    left: 15%;
+  }
+  .chat_desc p {
+    padding: 10px 50px;
+  }
+}
+
+/* media query for  768px */
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .chat_background {
+    flex-basis: 30%;
+  }
+  .chat_desc {
+    text-align: left;
+    flex-basis: 50%;
+    margin-left: 30%;
+  }
+  .chat_desc p {
+    padding: 10px 10px 10px 0;
+  }
+}
+
+/* media query for  large device */
+@media screen and (min-width: 1024px) {
+  .hero {
+    padding-bottom: 8%;
+  }
+  .chat_background {
+    height: 650px;
+  }
+  .chat_container {
+    top: 10%;
+    left: 15%;
+  }
+  .chat_desc p {
+    padding: 10px 50px 10px 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .chat_background {
+    height: 700px;
+  }
+  .chat_container {
+    top: 10%;
+    left: 21%;
+  }
+  .chat_desc p {
+    padding: 10px 200px 10px 0;
+  }
+}
