@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [ solution URL ](https://github.com/ABU-BAKAR-S/Frontend-Mentor-Chat-App-Illustrator)
-- Live Site URL: [ live site URL ](https://your-live-site-url.com)
+- Live Site URL: [ live site URL ](https://abu-bakar-s.github.io/Frontend-Mentor-Chat-App-Illustrator/)
 
 ## My process
 
